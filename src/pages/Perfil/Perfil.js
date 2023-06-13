@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  ScrollView,
-  Text,
-  TouchableOpacity,
-  View,
-  StyleSheet,
-} from 'react-native';
+import { ScrollView, Text, TouchableOpacity, View, StyleSheet} from 'react-native';
 import { MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
 
 export default function Perfil({ navigation }) {

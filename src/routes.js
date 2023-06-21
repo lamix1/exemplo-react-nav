@@ -8,30 +8,59 @@ import { MaterialIcons } from '@expo/vector-icons';
 import Home from './pages/Home';
 import Perfil from './pages/Perfil';
 import Pagamentos from './pages/Pagamentos';
-import Busca from './pages/Busca';
-import Pedidos from './pages/Pedidos';
-import Carteira from './pages/Carteira';
 
 const BottomTab = createBottomTabNavigator();
 
 export default function Routes() {
     return (
-        <NavigationContainer>
-            <BottomTab.Navigator activeColor="#333" inactiveColor="gray">
-                <BottomTab.Screen
-                name="Home"
-                component={Home}
-                options={{
-                    tabBarLabel: 'Home',
-                    tabBarIcon: ({color}) => (
-                        <MaterialIcons name="home" color={color} size={26} />
-                    ),
-                }}
-            />                
-            </BottomTab.Navigator>
-        </NavigationContainer>
-    )
-}
-
-//home busca pedidos perfil
-//search assigment person 
+      <NavigationContainer>
+        <BottomTab.Navigator 
+          screenOptions={{
+            tabBarActiveTintColor: 'red',
+            tabBarInactiveTintColor: 'black',
+          }}
+        >
+          <BottomTab.Screen
+            name="Home"
+            component={Home}
+            options={{
+              tabBarLabel: 'Home',
+              tabBarIcon: ({ color }) => (
+                <MaterialIcons name="home" color={color} size={26} />
+              ),
+            }}
+          />
+          <BottomTab.Screen
+            name="Busca"
+            component={Busca}
+            options={{
+              tabBarLabel: 'Busca',
+              tabBarIcon: ({ color }) => (
+                <MaterialIcons name="search" color={color} size={26} />
+              ),
+            }}
+          />
+          <BottomTab.Screen
+            name="Pedidos"
+            component={Pedidos}
+            options={{
+              tabBarLabel: 'Pedidos',
+              tabBarIcon: ({ color }) => (
+                <MaterialIcons name="assignment" color={color} size={26} />
+              ),
+            }}
+          />
+          <BottomTab.Screen
+            name="Perfil"
+            component={Perfil}
+            options={{
+              tabBarLabel: 'Perfil',
+              tabBarIcon: ({ color }) => (
+                <MaterialIcons name="person" color={color} size={26} />
+              ),
+            }}
+          />
+        </BottomTab.Navigator>
+      </NavigationContainer>
+    );
+  }

@@ -1,21 +1,21 @@
 import React from 'react';
 
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+//import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialIcons } from '@expo/vector-icons';
 import { createStackNavigator } from '@react-navigation/stack';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
 import Home from './pages/Home';
 import Perfil from './pages/Perfil/Index';
 import Pagamentos from './pages/Pagamentos';
 import Busca from './pages/Busca/Index';
 import Pedidos from './pages/Pedidos/Index';
+import PedidosAnteriores from './pages/PedidosAnteriores';
 
 const BottomTab = createBottomTabNavigator();
 const PerfilStack = createStackNavigator();
-
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 const Tab = createMaterialTopTabNavigator();
 
 function PedidosRouter() {

@@ -21,7 +21,10 @@ const Tab = createMaterialTopTabNavigator();
 
 function HomeRoutes() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{
+      headerShown: false
+    }}
+  >
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Item" component={Item} />
     </Stack.Navigator>
@@ -63,6 +66,7 @@ export default function Routes() {
           name="HomeRoutes"
           component={HomeRoutes}
           options= {{
+            headerShown: false,
             tabBarLabel: 'Home',
             tabBarIcon: ({ color }) => (
               <MaterialIcons name="home" color={color} size={26} />

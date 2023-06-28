@@ -22,7 +22,7 @@ const Tab = createMaterialTopTabNavigator();
 function HomeRoutes() {
   return (
     <Stack.Navigator screenOptions={{
-      headerShown: false
+      //headerShown: false
     }}
   >
       <Stack.Screen name="Home" component={Home} />

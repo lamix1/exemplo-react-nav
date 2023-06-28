@@ -7,12 +7,12 @@ import { MaterialIcons } from '@expo/vector-icons';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
-import Home from './pages/Home';
-import Perfil from './pages/Perfil/Index';
-import Pagamentos from './pages/Pagamentos';
-import Busca from './pages/Busca/Index';
-import Pedidos from './pages/Pedidos/Index';
-import PedidosAnteriores from './pages/PedidosAnteriores';
+import Home from './screens/Home';
+import Perfil from './screens/Perfil/Index';
+import Pagamentos from './screens/Pagamentos';
+import Busca from './screens/Busca/Index';
+import Pedidos from './screens/Pedidos/Index';
+import PedidosAnteriores from './screens/PedidosAnteriores';
 
 const BottomTab = createBottomTabNavigator();
 const PerfilStack = createStackNavigator();

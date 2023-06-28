@@ -7,13 +7,13 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 
 import { MaterialIcons } from '@expo/vector-icons';
 
-import Home from './screens/Home';
-import Busca from './screens/Busca';
-import Perfil from './screens/Perfil';
-import Pedidos from './screens/Pedidos';
-import PedidosAnteriores from './screens/PedidosAnteriores';
-import Pagamentos from './screens/Pagamentos';
-import Item from './screens/Item';
+import Home from './screens/Home/index';
+import Busca from './screens/Busca/index';
+import Perfil from './screens/Perfil/index';
+import Pedidos from './screens/Pedidos/index';
+import PedidosAnteriores from './screens/PedidosAnteriores/index';
+import Pagamentos from './screens/Pagamentos/index';
+import Item from './screens/Item/index';
 
 const BottomTab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
